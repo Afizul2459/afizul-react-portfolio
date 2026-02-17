@@ -1,0 +1,159 @@
+/* Button to open popup manually */
+.open-newsletter {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff6b6b, #ffb347);
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all ease;
+}
+.open-newsletter:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+}
+
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #fff;
+  width: 400px;
+  max-width: 90%;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-popup {
+  animation: scaleIn 0.4s ease;
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: #eee;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.close-btn:hover {
+  background: #ff6b6b;
+  color: white;
+  transform: rotate(90deg);
+}
+
+/* Popup Title */
+.popup-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Popup Description */
+.popup-desc {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Input Group Floating Label */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 0 5px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  color: #ff6b6b;
+  font-size: 0.8rem;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #ff6b6b, #ffb347);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.submit-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+}
+
+/* Footer text */
+.popup-footer {
+  font-size: 0.8rem;
+  margin-top: 15px;
+  color: #888;
+}

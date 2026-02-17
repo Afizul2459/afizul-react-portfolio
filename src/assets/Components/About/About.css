@@ -1,0 +1,117 @@
+.about-container{
+  padding:100px 0;
+}
+
+/* Gradient title */
+.gradient-text{
+  background:linear-gradient(90deg,#ff7b00,#b415ff);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  text-align:center;
+  font-size: 44px;
+  margin-bottom:30px;
+}
+
+/* ===== ABOUT ===== */
+.about-section{
+  display:flex;
+  align-items:center;
+  gap:70px;
+  padding:0 80px;
+  margin-bottom:120px;
+}
+
+.about-left img{
+  width:320px;
+  border-radius:30px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.3);
+  transition:.4s;
+}
+
+.about-left img:hover{
+  transform:scale(1.05) rotate(-1deg);
+}
+
+.about-right p{
+  opacity:.85;
+  line-height:1.7;
+}
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:20px 0;
+}
+
+.skills span{
+  padding:8px 16px;
+  border-radius:30px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  transition:.3s;
+}
+
+.skills span:hover{
+  background:linear-gradient(90deg,#ff7b00,#b415ff);
+}
+
+/* CTA */
+.about-cta{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 28px;
+  border-radius:30px;
+  background:linear-gradient(90deg,#ff7b00,#b415ff);
+  color:#fff;
+  text-decoration:none;
+  transition:.3s;
+}
+.about-cta:hover{ transform:scale(1.1); }
+
+/* ===== ACHIEVEMENTS ===== */
+.achievement-section{
+  padding:0 80px;
+  margin-bottom:120px;
+}
+
+.achievement-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.achievement-card{
+  padding:40px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(12px);
+  text-align:center;
+  transition:.4s;
+}
+
+.achievement-card h2{
+  font-size:42px;
+  background:linear-gradient(90deg,#ff7b00,#b415ff);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.achievement-card:hover{
+  transform:translateY(-10px) scale(1.05);
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .about-section{
+    flex-direction:column;
+    text-align:center;
+    padding:0 30px;
+  }
+  .achievement-section,
+  .project-section{ padding:0 30px; }
+}
+

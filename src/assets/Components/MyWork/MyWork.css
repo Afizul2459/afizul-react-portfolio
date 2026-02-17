@@ -1,0 +1,121 @@
+.mywork{
+    padding:90px 0;
+  }
+  #projects{
+    scroll-margin-top:120px;
+  }
+  
+  /* title */
+  .mywork-title h1{
+    text-align:center;
+    margin-bottom: 20px;
+    font-size:44px;
+    background:linear-gradient(90deg,#ff7b00,#b415ff);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+  }
+  .mywork-title p{
+    text-align:center;
+    opacity:.7;
+    margin-bottom:50px;
+  }
+  
+  /* grid */
+  .mywork-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+    padding:0 80px;
+  }
+  
+  /* card */
+  .work-card{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    height:280px;
+    cursor:pointer;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+  }
+  
+  .work-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+  }
+  
+  /* overlay */
+  .work-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.9));
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:.5s;
+    text-align:center;
+    color:#fff;
+  }
+  
+  .work-card:hover img{ transform:scale(1.15); }
+  .work-card:hover .work-overlay{ opacity:1; }
+  
+  /* text animation */
+  .work-overlay h3,
+  .work-overlay p,
+  .work-btns{
+    transform:translateY(30px);
+    transition:.5s;
+  }
+  
+  .work-card:hover .work-overlay h3,
+  .work-card:hover .work-overlay p,
+  .work-card:hover .work-btns{
+    transform:translateY(0);
+  }
+  
+  /* buttons */
+  .work-btns{
+    display:flex;
+    gap:12px;
+    margin-top:12px;
+  }
+  
+  .work-btns a{
+    padding:8px 18px;
+    border-radius:25px;
+    background:linear-gradient(90deg,#ff7b00,#b415ff);
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    transition:.3s;
+  }
+  .work-btns a:hover{ transform:scale(1.1); }
+  
+  /* show more */
+  .show-more{
+    text-align:center;
+    margin-top:50px;
+  }
+  .show-more a{
+    padding:14px 35px;
+    border-radius:30px;
+    border:2px solid #ff7b00;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+  }
+  .show-more a:hover{
+    background:linear-gradient(90deg,#ff7b00,#b415ff);
+    border:none;
+  }
+  
+  /* responsive */
+  @media(max-width:768px){
+    .mywork-container{ padding:0 30px; }
+  }
+  

@@ -1,0 +1,151 @@
+.services {
+  padding: 90px 0;
+  text-align: center;
+}
+
+/* Title */
+.services-title h1 {
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #df8908, #b415ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.services-subtitle {
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 80px;
+}
+
+/* Card Design */
+.service-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  padding: 35px 25px;
+  border-radius: 18px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow hover effect */
+.service-card::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(120deg,#ff00cc,#3333ff,#00ffee);
+  top: -120%;
+  left: -120%;
+  transition: 0.5s;
+  opacity: 0.15;
+}
+
+.service-card:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  border: 1px solid #fff;
+}
+
+/* Icon */
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 18px;
+  color: #ff6b6b;
+}
+
+/* Gradient title */
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  background: linear-gradient(270deg,#ff7b00,#b415ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Description */
+.service-card p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Tech stack text */
+.tech{
+  display:block;
+  margin:10px 0 15px;
+  font-size:14px;
+  opacity:0.7;
+}
+
+/* Card button */
+.service-btn{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:25px;
+  background:linear-gradient(90deg,#ff7b00,#b415ff);
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  transition:0.3s;
+  position: relative;
+  z-index: 1001;
+}
+
+.service-btn:hover{
+  transform:scale(1.1);
+}
+
+/* Client review */
+.client-review{
+  margin-top:60px;
+  opacity:0.8;
+  font-style:italic;
+}
+
+/* Main CTA button */
+.main-cta{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 32px;
+  border-radius:30px;
+  background:linear-gradient(90deg,#ff7b00,#b415ff);
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.main-cta:hover{
+  transform:scale(1.1);
+}
+
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 0 25px;
+  }
+
+  .services-title h1 {
+    font-size: 34px;
+  }
+}

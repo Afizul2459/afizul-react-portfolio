@@ -1,0 +1,18 @@
+html {
+  scroll-padding-top: 90px; 
+  scroll-behavior: smooth; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  height: 100vh;
+  background:#0b0f19;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
