@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import { Link } from "react-scroll";
 import profile_img from '../../../assets/profile_img.png';
 
 const About = () => {
@@ -34,7 +35,10 @@ const About = () => {
                         <span>Laravel</span>
                     </div>
 
-                    <a href="#contact" className="about-cta">Hire Me →</a>
+                    {/* <a href="#contact" className="about-cta">Hire Me →</a> */}
+                    <Link to="contact" smooth={true} duration={500}>
+                        <button className="about-cta">Hire Me →</button>
+                    </Link>
                 </div>
             </section>
 

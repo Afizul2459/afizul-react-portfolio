@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import { Link } from "react-scroll";
 import profile_img from "../../../assets/profile_img.png";
 
 const Hero = () => {
@@ -22,9 +23,12 @@ const Hero = () => {
                 </p>
 
                 <div className="hero-action">
-                    <a href="#contact">
+                    
+                    <Link to="contact" smooth={true} duration={500}>
                         <button className="primary-btn">Let's Talk</button>
-                    </a>
+                    </Link>
+
+
                     <a href="/CV_Afizul_Islam.pdf" download className="cv-btn" target="_blank"
                         rel="noopener noreferrer">
                         Download CV

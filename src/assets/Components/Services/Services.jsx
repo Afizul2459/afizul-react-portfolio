@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css'
+import { Link as ScrollLink } from "react-scroll"; 
 import { FaLaptopCode, FaGlobe, FaBullhorn, FaShareAlt, FaPalette } from "react-icons/fa";
 
 const Services = () => {
@@ -20,7 +21,9 @@ const Services = () => {
                     <h3>UI/UX Web Design</h3>
                     <p>Create modern, responsive & user-friendly website design using Figma & Adobe XD.</p>
                     <span className="tech">Figma • Adobe XD • Responsive Design</span>
-                    <a href="#projects" className="service-btn">View Work</a>
+                    <ScrollLink to="projects" smooth={true} duration={500}>
+                        <button className="service-btn">View Work</button>
+                    </ScrollLink>
                 </div>
 
                 {/* Development */}
@@ -29,7 +32,9 @@ const Services = () => {
                     <h3>Web Development</h3>
                     <p>Build fast & scalable websites that convert visitors into customers.</p>
                     <span className="tech">React • Laravel • REST API • MySQL</span>
-                    <a href="#projects" className="service-btn">View Work</a>
+                    <ScrollLink to="projects" smooth={true} duration={500}>
+                        <button className="service-btn">View Work</button>
+                    </ScrollLink>
                 </div>
 
 
@@ -40,7 +45,9 @@ const Services = () => {
                     <h3>Graphic Design</h3>
                     <p>Professional branding, logo & social media design to boost brand identity.</p>
                     <span className="tech">Photoshop • Illustrator • Canva</span>
-                    <a href="#projects" className="service-btn">View Work</a>
+                    <ScrollLink to="projects" smooth={true} duration={500}>
+                        <button className="service-btn">View Work</button>
+                    </ScrollLink>
                 </div>
 
                 {/* Social Media */}
@@ -49,7 +56,9 @@ const Services = () => {
                     <h3>Social Media Management</h3>
                     <p>Grow your audience and engagement with strategic content planning.</p>
                     <span className="tech">Facebook • Instagram • Content Strategy</span>
-                    <a href="#projects" className="service-btn">View Work</a>
+                    <ScrollLink to="projects" smooth={true} duration={500}>
+                        <button className="service-btn">View Work</button>
+                    </ScrollLink>
                 </div>
 
                 {/* Marketing */}
@@ -58,7 +67,9 @@ const Services = () => {
                     <h3>Digital Marketing</h3>
                     <p>Grow your business and increase sales with targeted SEO & Ads campaigns.</p>
                     <span className="tech">SEO • Google Ads • Facebook Ads</span>
-                    <a href="#projects" className="service-btn">View Work</a>
+                    <ScrollLink to="projects" smooth={true} duration={500}>
+                        <button className="service-btn">View Work</button>
+                    </ScrollLink>
                 </div>
 
             </div>
