@@ -29,7 +29,7 @@ const Hero = () => {
                     </Link>
 
 
-                    <a href="/CV_Afizul_Islam.pdf" download className="cv-btn" target="_blank"
+                    <a href="/Md_Afizul_Islam_CV.pdf" download className="cv-btn" target="_blank"
                         rel="noopener noreferrer">
                         Download CV
                     </a>
